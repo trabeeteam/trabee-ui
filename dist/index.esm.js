@@ -1,5 +1,6 @@
 import { jsx } from 'react/jsx-runtime';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -52,5 +53,13 @@ var Button = function (_a) {
 var StyledButton = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  padding: 10px 20px;\n  background-color: yellow;\n"], ["\n  padding: 10px 20px;\n  background-color: yellow;\n"])));
 var templateObject_1;
 
-export { Button };
+var MotionButton = function (_a) {
+    var text = _a.text, onClick = _a.onClick;
+    function handleClick() {
+        onClick();
+    }
+    return (jsx(motion.button, __assign({ whileHover: { scale: 1.2 }, whileTap: { scale: 0.8 }, onClick: handleClick }, { children: text }), void 0));
+};
+
+export { Button, MotionButton };
 //# sourceMappingURL=index.esm.js.map

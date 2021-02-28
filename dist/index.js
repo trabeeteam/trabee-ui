@@ -4,6 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var jsxRuntime = require('react/jsx-runtime');
 var styled = require('styled-components');
+var framerMotion = require('framer-motion');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -60,5 +61,14 @@ var Button = function (_a) {
 var StyledButton = styled__default['default'].button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  padding: 10px 20px;\n  background-color: yellow;\n"], ["\n  padding: 10px 20px;\n  background-color: yellow;\n"])));
 var templateObject_1;
 
+var MotionButton = function (_a) {
+    var text = _a.text, onClick = _a.onClick;
+    function handleClick() {
+        onClick();
+    }
+    return (jsxRuntime.jsx(framerMotion.motion.button, __assign({ whileHover: { scale: 1.2 }, whileTap: { scale: 0.8 }, onClick: handleClick }, { children: text }), void 0));
+};
+
 exports.Button = Button;
+exports.MotionButton = MotionButton;
 //# sourceMappingURL=index.js.map
