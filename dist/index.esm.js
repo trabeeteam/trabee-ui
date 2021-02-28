@@ -33,16 +33,18 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
+/** `Button` 컴포넌트는 어떠한 작업을 실행할 때 사용됩니다. */
 var Button = function (_a) {
-    var children = _a.children, onClick = _a.onClick;
+    var text = _a.text, onClick = _a.onClick;
     function handleClick() {
         onClick();
     }
-    return jsx(StyledButton, __assign({ onClick: handleClick }, { children: children }), void 0);
+    return jsx(StyledButton, __assign({ onClick: handleClick }, { children: text }), void 0);
 };
 var StyledButton = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  padding: 10px 20px;\n  background-color: yellow;\n"], ["\n  padding: 10px 20px;\n  background-color: yellow;\n"])));
 var templateObject_1;
 
+/** `MotionButton` 기존 Button 컴포넌트에 에니메이션을 부각시켰습니다. */
 var MotionButton = function (_a) {
     var text = _a.text, onClick = _a.onClick;
     function handleClick() {
