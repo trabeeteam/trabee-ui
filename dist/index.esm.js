@@ -38,15 +38,7 @@ var Button = function (_a) {
     function handleClick() {
         onClick();
     }
-    return (
-    // <motion.button
-    //   whileHover={{ scale: 1.2 }}
-    //   whileTap={{ scale: 0.8 }}
-    //   onClick={handleClick}
-    // >
-    //   {text}
-    // </motion.button>
-    jsx(StyledButton, __assign({ onClick: handleClick }, { children: text }), void 0)
+    return (jsx(StyledButton, __assign({ onClick: handleClick }, { children: text }), void 0)
     // <button onClick={handleClick}>{text}</button>
     );
 };

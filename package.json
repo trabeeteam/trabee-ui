@@ -23,6 +23,7 @@
     "storybook"
   ],
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
@@ -88,5 +89,6 @@
     ]
   },
   "author": "Jake Joo",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
