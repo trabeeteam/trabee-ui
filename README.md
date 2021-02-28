@@ -2,7 +2,7 @@
 
 A react based ui components.
 
-This project skeleton was created to help people get started with creating their own React component library using:
+We created to help our team get started with creating their own react component library using:
 
 - [React](https://reactjs.org/)
 - [Rollup](https://rollupjs.org/guide/en/)
