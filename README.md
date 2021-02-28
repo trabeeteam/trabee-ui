@@ -4,10 +4,10 @@ A react based ui components.
 
 This project skeleton was created to help people get started with creating their own React component library using:
 
-- [React]()
-- [Rollup](https://github.com/rollup/rollup)
+- [React](https://reactjs.org/)
+- [Rollup](https://rollupjs.org/guide/en/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Styled-Components](https://sass-lang.com/)
+- [Styled-Components](https://styled-components.com/)
 
 It also features:
 
