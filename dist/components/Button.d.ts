@@ -1,6 +1,6 @@
 import React from "react";
 export interface IProps {
-    text: string;
+    children: React.ReactNode;
     onClick: () => void;
 }
 declare const Button: React.FC<IProps>;

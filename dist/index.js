@@ -42,13 +42,11 @@ function __makeTemplateObject(cooked, raw) {
 }
 
 var Button = function (_a) {
-    var text = _a.text, onClick = _a.onClick;
+    var children = _a.children, onClick = _a.onClick;
     function handleClick() {
         onClick();
     }
-    return (jsxRuntime.jsx(StyledButton, __assign({ onClick: handleClick }, { children: text }), void 0)
-    // <button onClick={handleClick}>{text}</button>
-    );
+    return jsxRuntime.jsx(StyledButton, __assign({ onClick: handleClick }, { children: children }), void 0);
 };
 var StyledButton = styled__default['default'].button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  padding: 10px 20px;\n  background-color: yellow;\n"], ["\n  padding: 10px 20px;\n  background-color: yellow;\n"])));
 var templateObject_1;
