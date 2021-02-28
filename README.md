@@ -1,3 +1,24 @@
+<p>
+  <a href="https://www.npmjs.com/package/@trabee/ui">
+    <img
+      src="https://img.shields.io/npm/v/@trabee/ui.svg"
+      alt="npm"
+    >
+  </a>
+  <a href="https://github.com/trabeeteam/trabee-ui/blob/master/LICENSE">
+    <img
+      src="https://img.shields.io/github/license/mashape/apistatus.svg"
+      alt="MIT"
+    >
+  </a>
+  <a href="https://trabeeteam.github.io/trabee-ui/">
+    <img
+      src="https://img.shields.io/readthedocs/pip.svg"
+      alt="docs"
+    >
+  </a>
+</p>
+
 # Trabee Design System
 
 A react based ui components.
@@ -17,7 +38,7 @@ It also features:
 ## Install
 
 ```
-npm install --save @class101/ui
+npm install --save @trabee/ui
 ```
 
 ## Development
