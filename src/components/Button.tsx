@@ -2,15 +2,18 @@ import React from "react";
 import styled from "styled-components";
 
 export interface IProps {
-  children: React.ReactNode;
+  /** 버튼 텍스트 */
+  text: string;
+  /** 클릭했을 때 호출할 함수 */
   onClick: () => void;
 }
-const Button: React.FC<IProps> = ({ children, onClick }) => {
+/** `Button` 컴포넌트는 어떠한 작업을 실행할 때 사용됩니다. */
+const Button: React.FC<IProps> = ({ text, onClick }) => {
   function handleClick() {
     onClick();
   }
 
-  return <StyledButton onClick={handleClick}>{children}</StyledButton>;
+  return <StyledButton onClick={handleClick}>{text}</StyledButton>;
 };
 
 const StyledButton = styled.button`

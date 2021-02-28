@@ -1,15 +1,18 @@
 import React from "react";
-import { Meta } from "@storybook/react/types-6-0";
+import { Story, Meta } from "@storybook/react/types-6-0";
 import { action } from "@storybook/addon-actions";
 
-import Button from "./Button";
+import Button, { IProps } from "./Button";
 
 export default {
   title: "Components/Button",
   component: Button,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 } as Meta;
 
-export const Primary = () => <Button onClick={action("onClick")}>Hi</Button>;
+const Template: Story<IProps> = (args) => <Button {...args} />;
+
+export const Primary = Template.bind({});
+Primary.args = {
+  text: "hello world",
+  onClick: action("onClick"),
+};

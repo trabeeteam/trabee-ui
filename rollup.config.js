@@ -19,5 +19,4 @@ export default {
     typescript({ useTsconfigDeclarationDir: true }),
     postcss(),
   ],
-  external: Object.keys(pkg.peerDependencies || {}),
 };
