@@ -1,7 +1,7 @@
 {
   "name": "@trabee/ui",
-  "description": "This is design system for trabee.",
-  "version": "0.3.0",
+  "description": "This is design system for Trabee.",
+  "version": "0.4.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -89,6 +89,5 @@
     ]
   },
   "author": "Jake Joo",
-  "license": "MIT",
-  "dependencies": {}
+  "license": "MIT"
 }

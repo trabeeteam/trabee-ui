@@ -56,7 +56,7 @@ import { Button } from "@trabee/ui";
 
 const Example = () => (
   <div>
-    <Button>Hello WOrld</Button>
+    <Button>Hello Trabee</Button>
   </div>
 );
 

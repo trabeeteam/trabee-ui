@@ -5,7 +5,7 @@ import { action } from "@storybook/addon-actions";
 import MotionButton, { IProps } from "./MotionButton";
 
 export default {
-  title: "Components/MotionButton",
+  title: "Design System/MotionButton",
   component: MotionButton,
 } as Meta;
 
@@ -13,6 +13,6 @@ const Template: Story<IProps> = (args) => <MotionButton {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  text: "hello world",
+  text: "Hello Trabee",
   onClick: action("onClick"),
 };
