@@ -2,18 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 export interface IProps {
-  text: string;
+  children: React.ReactNode;
   onClick: () => void;
 }
-const Button: React.FC<IProps> = ({ text, onClick }) => {
+const Button: React.FC<IProps> = ({ children, onClick }) => {
   function handleClick() {
     onClick();
   }
 
-  return (
-    <StyledButton onClick={handleClick}>{text}</StyledButton>
-    // <button onClick={handleClick}>{text}</button>
-  );
+  return <StyledButton onClick={handleClick}>{children}</StyledButton>;
 };
 
 const StyledButton = styled.button`
