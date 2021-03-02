@@ -33,6 +33,71 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
+var typography = {
+    family: '-apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif',
+    weight: {
+        thin: "100",
+        extralight: "200",
+        light: "300",
+        regular: "400",
+        medium: "500",
+        semibold: "600",
+        bold: "700",
+        extrabold: "800",
+        black: "900",
+    },
+    size: {
+        h1: 96,
+        h2: 64,
+        h3: 48,
+        h4: 36,
+        h5: 24,
+        h6: 20,
+        s1: 16,
+        s2: 14,
+        b0: 18,
+        b1: 16,
+        b2: 14,
+        link: 16,
+    },
+};
+
+var fontSize = {
+    h1: typography.size.h1,
+    h2: typography.size.h2,
+    h3: typography.size.h3,
+    h4: typography.size.h4,
+    h5: typography.size.h5,
+    h6: typography.size.h6,
+    s1: typography.size.s1,
+    s2: typography.size.s2,
+    b0: typography.size.b0,
+    b1: typography.size.b1,
+    b2: typography.size.b2,
+    link: typography.size.link,
+};
+var fontWeight = {
+    h1: typography.weight.semibold,
+    h2: typography.weight.semibold,
+    h3: typography.weight.semibold,
+    h4: typography.weight.semibold,
+    h5: typography.weight.semibold,
+    h6: typography.weight.semibold,
+    s1: typography.weight.regular,
+    s2: typography.weight.medium,
+    b0: typography.weight.semibold,
+    b1: typography.weight.regular,
+    b2: typography.weight.regular,
+    link: typography.weight.regular,
+};
+/** `Typograph` 컴포넌트는 모든 텍스트 요소를 다룹니다. */
+var Typograph = function (_a) {
+    var variant = _a.variant, component = _a.component, children = _a.children;
+    return (jsx(StyledTag, __assign({ as: component, fontSize: fontSize[variant], fontWeight: fontWeight[variant] }, { children: children }), void 0));
+};
+var StyledTag = styled.div(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n  font-size: ", "px;\n  font-size: ", ";\n"], ["\n  font-size: ", "px;\n  font-size: ", ";\n"])), function (p) { return p.fontSize; }, function (p) { return p.fontWeight; });
+var templateObject_1$1;
+
 /** `Button` 컴포넌트는 어떠한 작업을 실행할 때 사용됩니다. */
 var Button = function (_a) {
     var text = _a.text, onClick = _a.onClick;
@@ -53,5 +118,5 @@ var MotionButton = function (_a) {
     return (jsx(motion.button, __assign({ whileHover: { scale: 1.2 }, whileTap: { scale: 0.8 }, onClick: handleClick }, { children: text }), void 0));
 };
 
-export { Button, MotionButton };
+export { Button, MotionButton, Typograph };
 //# sourceMappingURL=index.esm.js.map
