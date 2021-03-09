@@ -73,12 +73,10 @@ npm run storybook:deploy
 
 ```tsx
 import React from "react";
-import { Button } from "@trabee/ui";
+import { MotionButton } from "@trabee/ui";
 
 const Example = () => (
-  <div>
-    <Button>Hello Trabee</Button>
-  </div>
+  <MotionButton text="Hello Trabee" onClick={() => console.log("Hello Trabee")} />
 );
 
 export default Example;

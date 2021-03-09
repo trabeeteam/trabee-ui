@@ -9,10 +9,10 @@ export default {
   component: MotionButton,
 } as Meta;
 
-const Template: Story<IProps> = (args) => <MotionButton {...args} />;
+const Template: Story<IProps> = args => <MotionButton {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
   text: "Hello Trabee",
   onClick: action("onClick"),
-};
+} as IProps;

@@ -8,7 +8,7 @@ Trabee Design System is a reusable component library that helps Trabee contribut
 
 ## Install
 
-SDS components are written in React, and its stories are written in Component Story Format. It requires Storybook version 5.2-beta and up.
+Trabee components are written in React, and its stories are written in Component Story Format. It requires Storybook version 6.1.20 and up.
 
 Add SDS to your project.
 
@@ -21,15 +21,13 @@ npm install --save @trabee/ui
 Import components you want into your UI
 
 ```tsx
-import { Button } from ‘@trabee/ui’;
+import { MotionButton } from "@trabee/ui";
 ```
 
 and use them like so
 
 ```tsx
-const example = () => (
-  <div>
-    <Button text="Hello Trabee" onClick={() => console.log("Hello Trabee")} />
-  </div>
+const Example = () => (
+  <MotionButton text="Hello Trabee" onClick={() => console.log("Hello Trabee")} />
 );
 ```

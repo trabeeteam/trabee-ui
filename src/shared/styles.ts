@@ -2,23 +2,49 @@ export const dummy = {
   sampleText: "과연 어디까지 자신이 성장할 수 있는지, 맘껏 도전하기 바란다.",
 };
 
+export const typography = {
+  family: "-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif",
+  weight: {
+    thin: 100,
+    extralight: 200,
+    light: 300,
+    regular: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+    extrabold: 800,
+    black: 900,
+  },
+  size: {
+    h1: 40,
+    h2: 36,
+    h3: 32,
+    h4: 28,
+    h5: 24,
+    h6: 20,
+    s1: 16,
+    s2: 14,
+    b1: 16,
+    b2: 14,
+    link: 16,
+    bt1: 14,
+    bt2: 12,
+    cp: 12,
+    ol: 10,
+  },
+};
+
 export const color = {
   // solid
-  primary100: "#df001a",
-  primary90: "#f8001d",
-  primary80: "#ff122e",
-  primary70: "#ff2c45",
-  primary60: "#FF455B",
-  primary: "#FF455B",
-  primary50: "#ff5f71",
-  primary40: "#ff7888",
-  primary30: "#ff929e",
-  primary20: "#ffacb5",
-  primary10: "#ffc5cb",
+  primary: "#FFB200",
+  secondary: "#0095F6",
+  label: "#262626",
+  background: "#fffffff",
 
   // basic
   black: "#000000",
   white: "#ffffff",
+  red: "#DA1E28",
 
   // shade
   gray100: "#121619",
@@ -33,32 +59,24 @@ export const color = {
   gray10: "#f2f4f8",
 };
 
-export const typography = {
-  family:
-    '-apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif',
-  weight: {
-    thin: "100",
-    extralight: "200",
-    light: "300",
-    regular: "400",
-    medium: "500",
-    semibold: "600",
-    bold: "700",
-    extrabold: "800",
-    black: "900",
-  },
-  size: {
-    h1: 96,
-    h2: 64,
-    h3: 48,
-    h4: 36,
-    h5: 24,
-    h6: 20,
-    s1: 16,
-    s2: 14,
-    b0: 18,
-    b1: 16,
-    b2: 14,
-    link: 16,
-  },
+export const spacing = {
+  s2: "2px",
+  s4: "4px",
+  s8: "8px",
+  s16: "16px",
+  s32: "32px",
+};
+
+export const elevation = {
+  e2: "0 1px 2px rgba(0, 0, 0, .25)",
+  e4: "0 2px 4px rgba(0, 0, 0, .25)",
+  e8: "0 4px 8px rgba(0, 0, 0, .25)",
+  e16: "0 8px 16px rgba(0, 0, 0, .25)",
+  e32: "0 16px 32px rgba(0, 0, 0, .25)",
+};
+
+export const shape = {
+  r4: "4px",
+  r8: "8px",
+  r16: "16px",
 };

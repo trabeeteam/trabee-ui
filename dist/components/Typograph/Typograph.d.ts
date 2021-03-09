@@ -1,5 +1,5 @@
 import React from "react";
-declare type VariantTypes = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "s1" | "s2" | "b0" | "b1" | "b2" | "link";
+declare type VariantTypes = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "s1" | "s2" | "b1" | "b2" | "link" | "bt1" | "bt2" | "cp" | "ol";
 declare type ComponentTypes = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "strong" | "p" | "span" | "div" | "a";
 export interface IProps {
     /** 적용 스타일 */

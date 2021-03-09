@@ -12,10 +12,13 @@ const fontSize = {
   h6: typography.size.h6,
   s1: typography.size.s1,
   s2: typography.size.s2,
-  b0: typography.size.b0,
   b1: typography.size.b1,
   b2: typography.size.b2,
   link: typography.size.link,
+  bt1: typography.size.bt1,
+  bt2: typography.size.bt2,
+  cp: typography.size.cp,
+  ol: typography.size.ol,
 };
 
 const fontWeight = {
@@ -27,10 +30,13 @@ const fontWeight = {
   h6: typography.weight.semibold,
   s1: typography.weight.regular,
   s2: typography.weight.medium,
-  b0: typography.weight.semibold,
   b1: typography.weight.regular,
   b2: typography.weight.regular,
   link: typography.weight.regular,
+  bt1: typography.weight.bold,
+  bt2: typography.weight.bold,
+  cp: typography.weight.medium,
+  ol: typography.weight.regular,
 };
 
 type VariantTypes =
@@ -42,10 +48,13 @@ type VariantTypes =
   | "h6"
   | "s1"
   | "s2"
-  | "b0"
   | "b1"
   | "b2"
-  | "link";
+  | "link"
+  | "bt1"
+  | "bt2"
+  | "cp"
+  | "ol";
 
 type ComponentTypes =
   | "h1"
@@ -72,19 +81,15 @@ export interface IProps {
 /** `Typograph` 컴포넌트는 모든 텍스트 요소를 다룹니다. */
 const Typograph: React.FC<IProps> = ({ variant, component, children }) => {
   return (
-    <StyledTag
-      as={component}
-      fontSize={fontSize[variant]}
-      fontWeight={fontWeight[variant]}
-    >
+    <StyledTag as={component} fontSize={fontSize[variant]} fontWeight={fontWeight[variant]}>
       {children}
     </StyledTag>
   );
 };
 
-const StyledTag = styled.div<{ fontSize: number; fontWeight: string }>`
-  font-size: ${(p) => p.fontSize}px;
-  font-size: ${(p) => p.fontWeight};
+const StyledTag = styled.div<{ fontSize: number; fontWeight: number }>`
+  font-size: ${p => p.fontSize}px;
+  font-weight: ${p => p.fontWeight};
 `;
 
 export default Typograph;

@@ -14,11 +14,7 @@ const MotionButton: React.FC<IProps> = ({ text, onClick }) => {
   }
 
   return (
-    <motion.button
-      whileHover={{ scale: 1.2 }}
-      whileTap={{ scale: 0.8 }}
-      onClick={handleClick}
-    >
+    <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} onClick={handleClick}>
       {text}
     </motion.button>
   );
